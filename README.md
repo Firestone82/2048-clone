@@ -27,4 +27,4 @@
     - R - Game restart
     - T - Victory screen
     - Z - Game Over screen
-    - ESC - Game quit"# 2048-clone" 
+    - ESC - Game quit
