@@ -1,5 +1,5 @@
 # 2048 Game by Pavel Mikula
----
+Clone of 2048 game made in C as school project
 
 ## Requirements
  - SDL2
