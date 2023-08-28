@@ -25,7 +25,7 @@ git clone https://github.com/Firestone82/2048-clone.git
 cd 2048-clone
 
 # Install SDL2 libs
-# Up to you
+apt-get install libsdl2-dev
 
 # Build the project or use 'make'
 2) Run make file or by command
@@ -53,9 +53,9 @@ gcc *.c -o main -Wall -Wno-unused-variable -Wno-unused-parameter -ISDL2/include 
 Example images:
 
 <p align="center">
-    <img src="assets/Field4x4.png" alt="Game with size 4x4"> 
+    <img width="45%" src="assets/Field4x4.png" alt="Game with size 4x4"> 
     &nbsp;
     &nbsp;
     &nbsp;
-    <img src="assets/Field8x8.png" alt="Game with size 8x8"> 
+    <img width="45%" src="assets/Field8x8.png" alt="Game with size 8x8"> 
 </p>
