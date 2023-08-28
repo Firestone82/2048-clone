@@ -1,16 +1,36 @@
-# 2048 Game by Pavel Mikula
-Clone of 2048 game made in C as school project
+<img width="15%" src="assets/logo.png" align="right" alt="Icon">
+
+# Project for C (Copy of game 2048) 
+
+<p>
+    <img alt="License" src="https://img.shields.io/github/license/Firestone82/2048-clone">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues/Firestone82/2048-clone">
+</p>
+
+- Author: Pavel Mikula (MIK0486)
+- Took approximately 56 hours
+
+## Project Theme
+The project will be simple copy of retro game 2048, used to be played in web browser. Using SDL we create graphical environment where game will be played. 
 
 ## Requirements
  - SDL2
  - SDL2 TTF addon
  - SDL2 Image addon
 
-## Building
-1) Install SDL libs
+## Instalation
+```shell
+# Clone the repository
+git clone https://github.com/Firestone82/2048-clone.git
+cd 2048-clone
+
+# Install SDL2 libs
+# Up to you
+
+# Build the project or use 'make'
 2) Run make file or by command
-   - ```make```
-   - ```gcc *.c -o main -Wall -Wno-unused-variable -Wno-unused-parameter -ISDL2/include -LSDL2/lib -lSDL2 -lSDL2main -lSDL2_image -lSDL2_ttf```
+gcc *.c -o main -Wall -Wno-unused-variable -Wno-unused-parameter -ISDL2/include -LSDL2/lib -lSDL2 -lSDL2main -lSDL2_image -lSDL2_ttf
+```
 
 ## Usage
  - Arguments
@@ -28,3 +48,14 @@ Clone of 2048 game made in C as school project
     - T - Victory screen
     - Z - Game Over screen
     - ESC - Game quit
+
+## Images
+Example images:
+
+<p align="center">
+    <img src="assets/Field4x4.png" alt="Game with size 4x4"> 
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <img src="assets/Field8x8.png" alt="Game with size 8x8"> 
+</p>
