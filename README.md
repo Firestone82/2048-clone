@@ -2,11 +2,15 @@
 
 > **VŠB-TUO** — School project · Programming in C
 
-![C](https://img.shields.io/badge/Language-C-blue) ![SDL2](https://img.shields.io/badge/Library-SDL2-orange)
-
-## About
+![C](https://img.shields.io/badge/Language-C-blue) ![SDL2](https://img.shields.io/badge/Library-SDL2-orange) ![License](https://img.shields.io/github/license/Firestone82/2048-clone)
 
 A recreation of the classic 2048 sliding-tile puzzle game implemented in C using the SDL2 graphics library. Supports configurable board sizes and includes game-over and victory screens.
+
+<p align="center">
+  <img src="assets/Field4x4.png" alt="4×4 board" width="45%">
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/Field8x8.png" alt="8×8 board" width="45%">
+</p>
 
 ## Requirements
 
@@ -38,7 +42,13 @@ A recreation of the classic 2048 sliding-tile puzzle game implemented in C using
 ./main 8 8                # 8×8 board
 ```
 
-**Controls:** `WASD` / Arrow keys — move tiles · `R` — restart · `ESC` — exit
+**Controls:**
+
+| Key | Action |
+|-----|--------|
+| `WASD` / Arrow keys | Move tiles |
+| `R` | Restart game |
+| `ESC` | Exit |
 
 ## License
 
