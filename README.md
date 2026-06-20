@@ -1,61 +1,55 @@
-<img width="15%" src="assets/logo.png" align="right" alt="Icon">
+# 2048-clone
 
-# Project for C (Copy of game 2048) 
+> **VŠB-TUO** — School project · Programming in C
 
-<p>
-    <img alt="License" src="https://img.shields.io/github/license/Firestone82/2048-clone">
-    <img alt="GitHub issues" src="https://img.shields.io/github/issues/Firestone82/2048-clone">
-</p>
+![C](https://img.shields.io/badge/Language-C-blue) ![SDL2](https://img.shields.io/badge/Library-SDL2-orange) ![License](https://img.shields.io/github/license/Firestone82/2048-clone)
 
-- Author: Pavel Mikula (MIK0486)
-- Took approximately 56 hours
-
-## Project Theme
-The project will be simple copy of retro game 2048, used to be played in web browser. Using SDL we create graphical environment where game will be played. 
-
-## Requirements
- - SDL2
- - SDL2 TTF addon
- - SDL2 Image addon
-
-## Instalation
-```shell
-# Clone the repository
-git clone https://github.com/Firestone82/2048-clone.git
-cd 2048-clone
-
-# Install SDL2 libs
-apt-get install libsdl2-dev
-
-# Build the project or use 'make'
-2) Run make file or by command
-gcc *.c -o main -Wall -Wno-unused-variable -Wno-unused-parameter -ISDL2/include -LSDL2/lib -lSDL2 -lSDL2main -lSDL2_image -lSDL2_ttf
-```
-
-## Usage
- - Arguments
- 	- W - Number of colls
- 	    - default: 4, min: 2
- 	- H - Number of rows
- 	    - default: 4, min: 2
- - Start command
-    - ```./main W H```
-        - Example1 - ```./main```
-        - Example2 - ```./main 8 8```
- - Binds
-    - WASD, Arrows - Block movement
-    - R - Game restart
-    - T - Victory screen
-    - Z - Game Over screen
-    - ESC - Game quit
-
-## Images
-Example images:
+A recreation of the classic 2048 sliding-tile puzzle game implemented in C using the SDL2 graphics library. Supports configurable board sizes and includes game-over and victory screens.
 
 <p align="center">
-    <img width="45%" src="assets/Field4x4.png" alt="Game with size 4x4"> 
-    &nbsp;
-    &nbsp;
-    &nbsp;
-    <img width="45%" src="assets/Field8x8.png" alt="Game with size 8x8"> 
+  <img src="assets/Field4x4.png" alt="4×4 board" width="45%">
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/Field8x8.png" alt="8×8 board" width="45%">
 </p>
+
+## Requirements
+
+- GCC or compatible C compiler
+- SDL2, SDL2_image, SDL2_ttf
+
+## Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Firestone82/2048-clone.git
+   cd 2048-clone
+   ```
+
+2. Install SDL2 libraries (Debian/Ubuntu):
+   ```bash
+   apt-get install libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev
+   ```
+
+3. Build:
+   ```bash
+   gcc *.c -o main -Wall -ISDL2/include -LSDL2/lib -lSDL2 -lSDL2main -lSDL2_image -lSDL2_ttf
+   ```
+
+## Usage
+
+```bash
+./main [columns] [rows]   # defaults to 4×4
+./main 8 8                # 8×8 board
+```
+
+**Controls:**
+
+| Key | Action |
+|-----|--------|
+| `WASD` / Arrow keys | Move tiles |
+| `R` | Restart game |
+| `ESC` | Exit |
+
+## License
+
+This project was created as a school assignment at VŠB-TUO.
